@@ -1,2 +1,5 @@
-# In-App-Purchase-Demo
-This include consumable, non-consumable example
+
+#InAppPurchasing Domo 
+
+This include Consumable & Non-Consumable payment.
+

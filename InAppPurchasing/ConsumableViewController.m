@@ -29,6 +29,7 @@
     [super viewDidLoad];
     /*
      Added new test line
+     My Second test line
      */
     
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];

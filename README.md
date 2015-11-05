@@ -1,4 +1,4 @@
 
 #InAppPurchasing Domo 
 
-[This include Consumable & Non-Consumable payment]
+This include Consumable & Non-Consumable payment.

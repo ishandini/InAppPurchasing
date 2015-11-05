@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vtV-yc-Wlo">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--In-App Purchase-->
+        <scene sceneID="OpZ-g4-36N">
+            <objects>
+                <viewController id="pWJ-rK-5je" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jyh-Iz-MJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="GJz-C4-FyN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JZk-Ex-CHL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYo-e7-2aN">
+                                <rect key="frame" x="74" y="219" width="173" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Consumable">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="UrD-9l-TMX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOh-e2-yvD">
+                                <rect key="frame" x="74" y="313" width="173" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Non - Consumable">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="diM-SM-jse" kind="push" id="e9Q-AP-Vsg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="In-App Purchase" id="0Qk-FF-MvL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R52-0v-heR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269" y="355"/>
+        </scene>
+        <!--Consumable Purchase-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ConsumableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWd-XH-AMe">
+                                <rect key="frame" x="107" y="133" width="107" height="35"/>
+                                <color key="backgroundColor" red="0.11670752669999999" green="0.41789609230000002" blue="0.5622531247" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Buy Access">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBuyAccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hxq-OW-wHo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg5-Lq-xdl">
+                                <rect key="frame" x="63" y="269" width="194" height="35"/>
+                                <color key="backgroundColor" red="0.11670752669999999" green="0.41789609230000002" blue="0.5622531247" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Premium Feature Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaS-v7-tEP">
+                                <rect key="frame" x="20" y="351" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.35285603809999999" blue="0.19984019829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Consumable Purchase" id="3Y7-4A-vll"/>
+                    <connections>
+                        <outlet property="btnBuyAccess" destination="yWd-XH-AMe" id="khd-N8-vyC"/>
+                        <outlet property="btnPremiumFeature" destination="Sg5-Lq-xdl" id="m1W-FE-Qbt"/>
+                        <outlet property="lblStatus" destination="NaS-v7-tEP" id="eOg-BO-cs7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="355"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zLJ-tV-B7O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vtV-yc-Wlo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1s7-bv-Wy2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pWJ-rK-5je" kind="relationship" relationship="rootViewController" id="9Ry-Gs-Alb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aA1-7y-cfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263" y="355"/>
+        </scene>
+        <!--Non-Consumable-->
+        <scene sceneID="aIm-Xe-4fT">
+            <objects>
+                <viewController id="diM-SM-jse" customClass="NonConsumableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x5j-CW-HZW"/>
+                        <viewControllerLayoutGuide type="bottom" id="v8h-LA-G6P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GBt-2D-HDM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueg-ae-3IF">
+                                <rect key="frame" x="107" y="133" width="107" height="35"/>
+                                <color key="backgroundColor" red="0.11670752669999999" green="0.41789609230000002" blue="0.5622531247" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Buy Access">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedBuyAccess:" destination="diM-SM-jse" eventType="touchUpInside" id="HAr-7V-SSE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPd-ch-NNG">
+                                <rect key="frame" x="63" y="269" width="194" height="35"/>
+                                <color key="backgroundColor" red="0.11670752669999999" green="0.41789609230000002" blue="0.5622531247" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Premium Feature Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSq-i7-uvh">
+                                <rect key="frame" x="20" y="351" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.35285603809999999" blue="0.19984019829999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Non-Consumable" id="YnZ-5T-QOs"/>
+                    <connections>
+                        <outlet property="btnBuyAccess" destination="ueg-ae-3IF" id="DEX-tw-Dfn"/>
+                        <outlet property="btnPremiumFeature" destination="RPd-ch-NNG" id="Hwx-l7-otC"/>
+                        <outlet property="lblStatus" destination="uSq-i7-uvh" id="JuL-gt-M0c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukG-q9-zAc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="1043"/>
+        </scene>
+    </scenes>
+</document>

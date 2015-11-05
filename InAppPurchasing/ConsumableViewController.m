@@ -27,6 +27,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    /*
+     Added new test line
+     */
     
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     [self.btnBuyAccess setUserInteractionEnabled:NO];
